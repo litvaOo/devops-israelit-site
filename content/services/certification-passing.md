@@ -1,12 +1,12 @@
 ---
-title: 'Mergers'
-date: 2018-11-28T15:15:34+10:00
-icon: 'services/service-icon-4.png'
+title: 'Certification passing'
+date: 2018-11-28T15:14:54+10:00
+icon: 'certificate-svgrepo-com.svg'
 featured: true
 draft: false
-heroHeading: 'Mergers & Acquisitions'
-heroSubHeading: 'Thinking of acquiring another business? Let us guide you through the process.'
-heroBackground: 'services/service2.jpg'
+heroHeading: 'Certification passing'
+heroSubHeading: 'Saving for retirement requires careful planning.'
+heroBackground: 'services/service1.jpg'
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

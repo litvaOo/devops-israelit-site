@@ -1,10 +1,10 @@
 ---
-title: 'Business Advisory'
+title: '24/7 Support'
 date: 2018-11-28T15:14:39+10:00
-icon: 'services/service-icon-2.png'
+icon: 'monitor-svgrepo-com.svg'
 featured: true
 draft: false
-heroHeading: 'Business Advisory'
+heroHeading: '24/7 Support'
 heroSubHeading: 'Expert advice and guidance when you need it most.'
 heroBackground: 'services/service2.jpg'
 ---
