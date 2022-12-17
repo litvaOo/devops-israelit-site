@@ -6,7 +6,7 @@ weight: 100
 heroHeading: 'Case Studies'
 heroSubHeading: 'Our portfolio and previous projects'
 heroBackground: 'https://source.unsplash.com/1600x900/?architecture'
-image: 'case-studies/work1.jpg'
+image: ''
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
