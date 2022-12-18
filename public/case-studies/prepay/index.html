@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>PrePay - DevOps-as-a-Service by IsraelIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://devops.israelit.pro/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.4be821da6f580945734893eade9608940c6a2fa967507a70de1582d975493bc3.css">
+  
+
+  
+
+</head>
+
+<body class='page page-work-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-services">
+      <a href="/services/">
+        
+        <span>Services</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-case studies">
+      <a href="/case-studies/">
+        
+        <span>Case Studies</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-contact us">
+      <a href="/contactus/">
+        
+        <span>Contact Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://devops.israelit.pro/"><img height=29px width=36px alt="Hugo Hero" src="/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://devops.israelit.pro/"><img height=36px width=36px alt="Hugo Hero" src="/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-services">
+      <a href="/services/">
+        
+        <span>Services</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-case studies">
+      <a href="/case-studies/">
+        
+        <span>Case Studies</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-contact us">
+      <a href="/contactus/">
+        
+        <span>Contact Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Toggle Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    
+<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('https://unsplash.com/photos/pb_lF8VWaPU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGRpZ2l0YWwlMjB3YWxsZXR8ZW58MHwwfHx8MTY3MTMxNzcyNg&amp;force=true&amp;w=1920')">
+  <div class="container ">
+    <div class="hero-text">
+      <span class="hero-section">case-studies</span>
+      <h1>PrePay</h1>
+      <p>Digital wallet solution.</p>
+    </div>
+  </div>
+</div>
+  
+<div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="work work-single">
+        <div class="content"><p><a href="https://prepay.co.il">PrePay</a> is a multi-tenant Digital Wallet platform.</p>
+<p>For this project two things were of the heaviest priority - security and speed.
+While the Terraform definitions were handed over from client&rsquo;s previous agency, the rest was on our shoulders: the Kubernetes definitions, Helm charts, and CI/CD. All of this had to be done in one-week term, because the client&rsquo;s demo for investors was long overdue, so our team had to be really fast. Thanks to our expertise, we were able to put up the working infrastructure fast enough, and demo went without a hitch. We took some time after it, refactored all parts, and now the process of starting new tenant is as simple as pushing a new branch. After that - end customers can add their DNS and start working with their own instance of application.</p>
+<p>The big thing for this project was completing the certifications. We had to do both ISO 27001 and PCI DSS. Not only two of those simoultaneously, but in a short time as well - to ensure customers&rsquo; payment information safety before the soft launch.
+After initial analysis with QSA, we pinpointed two gaps: Web Security and code-level issues.</p>
+<p>In order to resolve those, we started with an easier one - web security.
+AWS WAF was enabled immediately, using OWASPs ModSecurity list of rules, AWS Guard was set up to protect us from DDoS attacks, and all security groups and routes were double-checked for allowing any redundant ports or having too broad allowed source.</p>
+<p>The next part was securing code and supply chain.
+Big chunk of it was already done by our existing GitHub settings: 2FA, encrypted secrets, etc. But a lot of things were done on the project-level as well:</p>
+<ol>
+<li>Required test coverage of at least 90%.</li>
+<li>Required linter pass.</li>
+<li>Required <a href="https://github.com/aquasecurity/trivy">Trivy</a> scanner for Docker security.</li>
+<li>Required SonarQube for static analysis.</li>
+<li>Required in-build package manager supply chain analytics: npm audit, composer, etc.</li>
+<li>Required AWS scan on ECR.</li>
+<li>Required proactive monitoring with ClamAV on Kubernetes level.</li>
+</ol>
+<p>After setting up all of the mentioned above, we were able to find and eliminate 4 potential critical issues, as well as dozens of high and medium risks. With these elements in place, both certifications were passed in a span of a month.</p>
+</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          
+          <ul class="footer-menu">
+            <li><a href="https://devops.israelit.pro/">Home</a></li>
+            <li><a href="https://devops.israelit.pro/contact">Contact</a></li>
+            <li class="copyright">© 2022 DevOps-as-a-Service by IsraelIT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            
+            
+            <li><strong>Email: </strong><a href="mailto:devops@israelit.pro">
+                devops@israelit.pro</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+
+
+
+
+  <script type="text/javascript" src="/js/services.min.59bfd7d7aaf7e918e4271e11ef3cb4d91e22c83b70437eec78bdffdcd2d51c0a.js"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

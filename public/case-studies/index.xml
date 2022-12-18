@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Studies on DevOps-as-a-Service by IsraelIT</title>
+    <link>https://devops.israelit.pro/case-studies/</link>
+    <description>Recent content in Case Studies on DevOps-as-a-Service by IsraelIT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Feb 2018 11:52:18 +0700</lastBuildDate>
+    
+	<atom:link href="https://devops.israelit.pro/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PassItForward</title>
+      <link>https://devops.israelit.pro/case-studies/passitforward/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>https://devops.israelit.pro/case-studies/passitforward/</guid>
+      <description>PassItForward is a platform for croudfunding of the charity projects.
+Before joining our company, the infrastructure development was quick, but chaotic. At one point, the whole infrastructure was heavily overprovisioned. While the general state of the cloud was satisfactory, the costs were over the roof for a simple app of one Node.js backend and two SSR front-ends.
+We started with installing an APM and monitoring, in this case - New Relic.</description>
+    </item>
+    
+    <item>
+      <title>PrePay</title>
+      <link>https://devops.israelit.pro/case-studies/prepay/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>https://devops.israelit.pro/case-studies/prepay/</guid>
+      <description>PrePay is a multi-tenant Digital Wallet platform.
+For this project two things were of the heaviest priority - security and speed. While the Terraform definitions were handed over from client&amp;rsquo;s previous agency, the rest was on our shoulders: the Kubernetes definitions, Helm charts, and CI/CD. All of this had to be done in one-week term, because the client&amp;rsquo;s demo for investors was long overdue, so our team had to be really fast.</description>
+    </item>
+    
+    <item>
+      <title>WingZ</title>
+      <link>https://devops.israelit.pro/case-studies/wingz/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>https://devops.israelit.pro/case-studies/wingz/</guid>
+      <description>WingZ is an app for E-Scooters sharing, localized in Azerbaijan.
+Our team were on the development staff from the very beginning of the MVP phase, so we had a chance to see it grow from zero to almost 130000+ users. While the application itself was quite simple, consisting of one .NET and one Java app, with PostgreSQL for storage, there were two hardships to overcome:
+ High requirements for uptime and latency - we didn&amp;rsquo;t want someone&amp;rsquo;s scooter get locked on full-speed just because the server went down.</description>
+    </item>
+    
+    <item>
+      <title>Vibo</title>
+      <link>https://devops.israelit.pro/case-studies/vibo/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>https://devops.israelit.pro/case-studies/vibo/</guid>
+      <description>ViboDJ is a music &amp;amp; event planning application, centered around social functions.
+The project&amp;rsquo;s infrastructure was handed over to us from client&amp;rsquo;s previous agency. Our first action was to conduct a thorough analysis, which revealed quite unoptimized architecture - overprovisioned EC2 instances, old instance types, classic ELB, Postgres and ElasticSearch set up on EC2.
+From here, we decided to move onto low-hanging fruits: containerize Java application into Docker and move to ECS with Autoscaling Group, removing almost 60% of instances, which were held on standby, and migrate from t2 to t3a instances.</description>
+    </item>
+    
+    <item>
+      <title>Trade&#43;</title>
+      <link>https://devops.israelit.pro/case-studies/trade/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>https://devops.israelit.pro/case-studies/trade/</guid>
+      <description>Trade+ is a FinTech company, offering a wide variety of sevices: trading, banking, payments, financial insights and more.
+Our partnership with them had started two years ago, assisting them in development of the core proposition: mobile app for stock and crypto trading. DevOps team has joined right at the start of the project, setting up infrastructure, CI/CD and release strategy from Day 1.
+The project from technical part is a system of .</description>
+    </item>
+    
+  </channel>
+</rss>

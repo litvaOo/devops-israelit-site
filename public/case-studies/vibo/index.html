@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vibo - DevOps-as-a-Service by IsraelIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://devops.israelit.pro/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.4be821da6f580945734893eade9608940c6a2fa967507a70de1582d975493bc3.css">
+  
+
+  
+
+</head>
+
+<body class='page page-work-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-services">
+      <a href="/services/">
+        
+        <span>Services</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-case studies">
+      <a href="/case-studies/">
+        
+        <span>Case Studies</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-contact us">
+      <a href="/contactus/">
+        
+        <span>Contact Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://devops.israelit.pro/"><img height=29px width=36px alt="Hugo Hero" src="/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://devops.israelit.pro/"><img height=36px width=36px alt="Hugo Hero" src="/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-services">
+      <a href="/services/">
+        
+        <span>Services</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-case studies">
+      <a href="/case-studies/">
+        
+        <span>Case Studies</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-contact us">
+      <a href="/contactus/">
+        
+        <span>Contact Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Toggle Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    
+<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('https://unsplash.com/photos/OuLVg5ZKphI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8ZGp8ZW58MHwwfHx8MTY3MTI4ODYzNg&amp;force=true&amp;w=1920')">
+  <div class="container ">
+    <div class="hero-text">
+      <span class="hero-section">case-studies</span>
+      <h1>Vibo</h1>
+      <p>Social network for DJs</p>
+    </div>
+  </div>
+</div>
+  
+<div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="work work-single">
+        <div class="content"><p><a href="https://vibodj.com/">ViboDJ</a> is a music &amp; event planning application, centered around social functions.</p>
+<p>The project&rsquo;s infrastructure was handed over to us from client&rsquo;s previous agency. Our first action was to conduct a thorough analysis, which revealed quite unoptimized architecture - overprovisioned EC2 instances, old instance types, classic ELB, Postgres and ElasticSearch set up on EC2.</p>
+<p>From here, we decided to move onto low-hanging fruits: containerize Java application into Docker and move to ECS with Autoscaling Group, removing almost 60% of instances, which were held on standby, and migrate from t2 to t3a instances. ELB was migrated to Application Load Balancer as well, due to ELB Classic getting deprecated.</p>
+<p>Next steps were a bit harder: Migration of data storages.
+We started with and ElastiSearch, writing a pipeline on Logstash to move from EC2 to Elastic Cloud. After a little bit more than 24 hours, migration was completed, and we were able to redeploy API instances with access to new Elastic instances. Migration was done with zero downtime and data loss.</p>
+<p>The final touch was moving Postgres from EC2 to RDS. Despite our fears, AWS Database Migration Service was capable of moving all data within 42 hours. We did not have any custom plugins on self-hosted PostgreSQL, so after DMS has reported finished migration, we switched connection string and tested all user-cases. With that, optimization of the infrastructure was done.</p>
+</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          
+          <ul class="footer-menu">
+            <li><a href="https://devops.israelit.pro/">Home</a></li>
+            <li><a href="https://devops.israelit.pro/contact">Contact</a></li>
+            <li class="copyright">© 2022 DevOps-as-a-Service by IsraelIT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            
+            
+            <li><strong>Email: </strong><a href="mailto:devops@israelit.pro">
+                devops@israelit.pro</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+
+
+
+
+  <script type="text/javascript" src="/js/services.min.59bfd7d7aaf7e918e4271e11ef3cb4d91e22c83b70437eec78bdffdcd2d51c0a.js"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
