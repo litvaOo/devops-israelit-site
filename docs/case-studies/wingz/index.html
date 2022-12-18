@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>WingZ - DevOps-as-a-Service by IsraelIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://devops.israelit.pro/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.4be821da6f580945734893eade9608940c6a2fa967507a70de1582d975493bc3.css">
+  
+
+  
+
+</head>
+
+<body class='page page-work-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-services">
+      <a href="/services/">
+        
+        <span>Services</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-case studies">
+      <a href="/case-studies/">
+        
+        <span>Case Studies</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-contact us">
+      <a href="/contactus/">
+        
+        <span>Contact Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://devops.israelit.pro/"><img height=29px width=36px alt="Hugo Hero" src="/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://devops.israelit.pro/"><img height=36px width=36px alt="Hugo Hero" src="/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-services">
+      <a href="/services/">
+        
+        <span>Services</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-case studies">
+      <a href="/case-studies/">
+        
+        <span>Case Studies</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-contact us">
+      <a href="/contactus/">
+        
+        <span>Contact Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Toggle Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    
+<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('https://unsplash.com/photos/0cRfS_WyuqI/download?force=true&amp;w=1920')">
+  <div class="container ">
+    <div class="hero-text">
+      <span class="hero-section">case-studies</span>
+      <h1>WingZ</h1>
+      <p>E-Scooter sharing app.</p>
+    </div>
+  </div>
+</div>
+  
+<div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="work work-single">
+        <div class="content"><p><a href="wingz.az">WingZ</a> is an app for E-Scooters sharing, localized in Azerbaijan.</p>
+<p>Our team were on the development staff from the very beginning of the MVP phase, so we had a chance to see it grow from zero to almost 130000+ users.
+While the application itself was quite simple, consisting of one .NET and one Java app, with PostgreSQL for storage, there were two hardships to overcome:</p>
+<ol>
+<li>High requirements for uptime and latency - we didn&rsquo;t want someone&rsquo;s scooter get locked on full-speed just because the server went down.</li>
+<li>Tight budget - especially in the beginning, before validating the idea, we had no luxury of high redundancy.</li>
+</ol>
+<p>So, with these two things in mind, we delved deeper into the AWS, settling on the following solution:</p>
+<ol>
+<li>Postgres-compatible Aurora with read-replicas: with no to negligble difference in cost to usual Postgres, our benchmarks have shown higher performance and lower latency with Aurora. Complacent with Graviton-type instances, this was our best bet in terms of performance-to-cost ration.</li>
+<li>ECS on EC2 for API: we didn&rsquo;t see any need for a complex orchestration for only two instances, so we used simple ECS for deploying and scaling our apps. EC2 was chosen as a capacity provider due to being cheaper than Fargate and providing better reservation options.</li>
+<li>Reserved and Spot Instances for Autoscaling: we had used a 1:1:1 ratio in our Autoscaling groups, by reserving a third of instances for guaranteed performance and availability, and then leveraging on-demand and spot instances in halves to save cost, while scaling for increased loads.</li>
+</ol>
+<p>This setup has given us a needed uptime of 99.95%, while keeping the overall cost of infrastructure less than a 1000 USD.</p>
+</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          
+          <ul class="footer-menu">
+            <li><a href="https://devops.israelit.pro/">Home</a></li>
+            <li><a href="https://devops.israelit.pro/contact">Contact</a></li>
+            <li class="copyright">© 2022 DevOps-as-a-Service by IsraelIT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            
+            
+            <li><strong>Email: </strong><a href="mailto:devops@israelit.pro">
+                devops@israelit.pro</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+
+
+
+
+  <script type="text/javascript" src="/js/services.min.59bfd7d7aaf7e918e4271e11ef3cb4d91e22c83b70437eec78bdffdcd2d51c0a.js"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
